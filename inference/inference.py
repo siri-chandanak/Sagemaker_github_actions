@@ -4,7 +4,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the model
-model = joblib.load("../inference/iris_model.pkl")
+model = joblib.load("iris_model.pkl")
 
 # ✅ Add this home route
 @app.route("/", methods=["GET"])
